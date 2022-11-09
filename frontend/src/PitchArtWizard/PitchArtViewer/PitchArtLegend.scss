@@ -1,0 +1,25 @@
+.pitch-art-legend-col-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pitch-art-legend-col {
+    margin-right: 16px;
+}
+
+.pitch-art-legend-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.pitch-art-legend-list-item-text {
+    font-size: 13px;
+}
+
+.pitch-art-legend-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}

@@ -1,0 +1,64 @@
+.metilda-breadcrumb-list {
+    margin-left: 8px;
+    text-align: left;
+}
+
+.metilda-breadcrumb-list-item {
+    font-size: 1.64rem;
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+}
+
+.metilda-syllable-pitch-art {
+    position: relative;
+}
+
+.pitch-art-controls-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pitch-art-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.metilda-btn {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.align-left {
+    margin-left: 0;
+}
+
+#metilda-word-list {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 32px;
+    padding-right: 16px;
+    height: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#metilda-word-list ul li {
+    cursor: pointer;
+}
+
+.metilda-pitch-art-image-loading {
+    position: absolute;
+    width: 653px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.metilda-pitch-art-image-loading .preloader-wrapper.big {
+    width: 160px;
+    height: 160px;
+}

@@ -1,0 +1,99 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "8.12.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@types/chai": "^4.1.7",
+    "@types/d3-scale": "^2.1.1",
+    "@types/enzyme": "^3.9.1",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.3",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-file-reader-input": "^1.1.4",
+    "@types/react-redux": "^7.0.3",
+    "@types/react-router": "^4.4.5",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/sinon": "^7.0.10",
+    "@types/styled-components": "^4.1.13",
+    "@types/tone": "git://github.com/Tonejs/TypeScript.git",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "d3-scale": "^3.0.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "font-awesome": "^4.7.0",
+    "immutability-helper": "^3.0.0",
+    "jquery": "^3.4.0",
+    "js-file-download": "^0.4.5",
+    "konva": "^2.5.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "query-string": "^6.4.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-file-reader-input": "^2.0.0",
+    "react-konva": "^16.5.2",
+    "react-media-player": "^0.7.5",
+    "react-pie-menu": "^0.2.4",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8",
+    "react-test-renderer": "^16.8.5",
+    "recorder-js": "^1.0.7",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "sinon": "^7.3.0",
+    "styled-components": "^4.2.0",
+    "tone": "^13.4.9",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start": "npm-run-all -p watch-css start-js",
+    "start-js": "react-scripts start",
+    "tslint": "tslint -p tsconfig.json -c tslint.json src/**/*.{ts,tsx}",
+    "build": "npm run build-css && react-scripts build",
+    "test": "npm run tslint && npm run build-css && react-scripts test",
+    "coveralls": "npm run tslint && npm run build-css && react-scripts test --coverage --coverageReporters=text-lcov | coveralls",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "html"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "src/**/*.tsx",
+      "src/**/*.ts",
+      "!src/Lib/**/*.js",
+      "!src/serviceWorker.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "@types/chai-enzyme": "^0.6.6",
+    "chai-enzyme": "^1.0.0-beta.1"
+  }
+}
