@@ -25,3 +25,33 @@ cd frontend
 npm install
 npm start
 ```
+
+## Build and Run - Instructions as of 11/22
+
+Setting up Metilda in the ICMR2023-metilda Repository
+
+Dependencies
+
+Python 2.7.18
+Node 14.18.2
+
+Linux
+
+Python (Terminal 1)
+
+Create Virtual Environment
+$ virtualenv -p /usr/bin/python venv
+This includes the path to the Python Directory - default location for 2.7.18
+cd to the directory where requirements.txt is located.
+$ pip install -r requirements.txt
+activate your virtualenv
+$ source venv/bin/activate
+run: pip install -r requirements.txt in your shell.
+Run Flask Server
+./bin/runLocalServer.sh
+
+Node (Terminal 2)
+Install Node 14.18.2
+$ cd frontend
+$ npm i
+$npm start
