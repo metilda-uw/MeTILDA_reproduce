@@ -1,5 +1,6 @@
 import React, { createRef } from "react";
 import { Layer, Line, Rect, Stage } from "react-konva";
+import Konva from "konva";
 // @ts-ignore
 import * as Tone from "tone";
 import { Letter, Speaker } from "../../types/types";
@@ -75,7 +76,7 @@ class PitchArtDrawingWindow extends React.Component<
   private readonly pitchArtSoundLengthSeconds: number;
   private readonly fontSize: number;
   private downloadRef = createRef<HTMLAnchorElement>();
-  private stageRef = createRef<typeof Stage>();
+  private stageRef = createRef<Konva.Stage>();
 
   constructor(props: PitchArtDrawingWindowProps) {
     super(props);
@@ -179,14 +180,13 @@ class PitchArtDrawingWindow extends React.Component<
   }
 
   imageBoundaryClicked(coordConverter: PitchArtCoordConverter) {
-    // @ts-ignore
+    //@ts-ignore
     const yPos = this.stageRef.current!.getStage().getPointerPosition().y;
     const pitch = coordConverter.rectCoordsToVertValue(yPos);
     this.playSound(pitch);
   }
 
   setPointerEnabled(isEnabled: boolean) {
-    // @ts-ignore
     this.stageRef.current!.getStage().container().style.cursor = isEnabled
       ? "pointer"
       : "default";
