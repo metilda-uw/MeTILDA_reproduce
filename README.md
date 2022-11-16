@@ -2,63 +2,83 @@
 
 Audio analysis web app.
 
-## Build and Run
-
-### Python
-
-1. Install a Python interpreter (the version is specified in runtime.txt)
-1. Create a virtualenv under the /venv folder
-1. Run these commands:
-
-```
-./venv/Scripts/python -r requirements.txt
-./bin/runLocalServer.sh
-```
-
-### React
-
-1. Install nodejs (the version is specified in `/frontend/package.json`)
-1. Run these commands:
-
-```
-cd frontend
-npm install
-npm start
-```
-
 ## Build and Run - Instructions as of 11/22
 
 ### Setting up Metilda in the ICMR2023-metilda Repository
 
-### Dependencies
-
 ```
-Python 2.7.18
-Node 14.18.2
-
-Linux
+Build and Run on Ubuntu 20.04
 ```
 
-### Python (Terminal 1)
+### Install Prerequisite Packages
 
 ```
-Create Virtual Environment
-$ virtualenv -p /usr/bin/python venv
-This includes the path to the Python Directory - default location for 2.7.18
-cd to the directory where requirements.txt is located.
+$ sudo apt-get update
+$ sudo apt-get install build-essential checkinstall virtualenv python-dev-is-python3 libpq-dev libfreetype6-dev libxft-dev ffmpeg
+```
+
+### Clone the Metilda Repository
+
+```
+$ git clone https://github.com/metilda-uw/icmr2023-metilda.git
+```
+
+### Create and activate a virtual environment
+
+```
+$ virtualenv metilda --python=3.8.10
+$ cd metilda
+$ source bin/activate
+```
+
+### Verify that Python and Pip are installed correctly
+
+```
+$ python -V
+$ pip -V
+```
+
+### Install Python packages using requirements.txt
+
+```
 $ pip install -r requirements.txt
-activate your virtualenv
-$ source venv/bin/activate
-run: pip install -r requirements.txt in your shell.
-Run Flask Server
-./bin/runLocalServer.sh
 ```
 
-### Node (Terminal 2)
+### Install Node and NVM
+
+1. Install nodejs (the version is specified in `/frontend/package.json`, it is currently 14.18.2). You can install the current version of Node then use nvm to manage the version used in the project.
 
 ```
-Install Node 14.18.2
+$ apt install nodejs
+```
+
+2. Install <a href="https://heynode.com/tutorial/install-nodejs-locally-nvm">Node Version Manager</a>
+3. Run the following commands to install and switch to the correct version of node (Important for successfully running the frontend)
+
+```
+$ nvm install 14.18.2
+$ nvm use 14.18.2
+```
+
+### Install NPM packages (run this one time at setup)
+
+```
 $ cd frontend
-$ npm i
-$npm start
+$ npm install
+```
+
+## In two separate terminals run backend and frontend
+
+### Run backend (after activating virtual environment)
+
+```
+$ cd src
+$ python -m metilda.local_server
+```
+
+### Run frontend (In a second terminal window)
+
+```
+$ cd frontend
+$ npm start
 ```
