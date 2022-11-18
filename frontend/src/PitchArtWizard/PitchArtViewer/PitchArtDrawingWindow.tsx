@@ -363,7 +363,7 @@ class PitchArtDrawingWindow extends React.Component<
       <div className="PitchArtDrawingWindow">
         <Stage
           className="PitchArtDrawingWindow-pitchart"
-          Stageref={this.stageRef}
+          ref={this.stageRef}
           width={this.props.width}
           height={this.props.height}
         >
