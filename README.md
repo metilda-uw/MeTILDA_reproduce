@@ -14,20 +14,20 @@ Build and Run on Ubuntu 20.04
 
 ```
 $ sudo apt-get update
-$ sudo apt-get install build-essential checkinstall virtualenv python-dev-is-python3 libpq-dev libfreetype6-dev libxft-dev ffmpeg
+$ sudo apt-get install build-essential checkinstall virtualenv python-dev-is-python3 libpq-dev libfreetype6-dev libxft-dev ffmpeg npm
 ```
 
 ### Clone the Metilda Repository
 
 ```
-$ git clone https://github.com/metilda-uw/icmr2023-metilda.git
+$ git clone https://github.com/metilda-uw/MeTILDA_reproduce.git
 ```
 
 ### Create and activate a virtual environment
 
 ```
-$ virtualenv metilda --python=3.8.10
-$ cd metilda
+$ virtualenv MeTILDA_reproduce --python=3.8.10
+$ cd MeTILDA_reproduce
 $ source bin/activate
 ```
 
