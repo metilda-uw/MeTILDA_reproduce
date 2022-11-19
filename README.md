@@ -1,13 +1,14 @@
 # MeTILDA
 
-Audio analysis web app.
+Melodic Transcription in Language Documentation and Application (MeTILDA) is a Learning and Analysis Platform that helps people who are interested to learn the endangered language called Blackfoot and also the linguistic researchers who are working for the protection of the language. The visual representation would allow Blackfoot teachers and learners to understand how their pronunciation compares to that of native speakers. Additionally, it would help linguistics researchers in their efforts to document and transcribe audio clips of endangered languages.
 
-## Build and Run - Instructions as of 11/22
 
-### Setting up Metilda in the ICMR2023-metilda Repository
+## Build and Run Instructions
+
+### Setting up Metilda 
 
 ```
-Build and Run on Ubuntu 20.04
+MeTILDA_Reproduce has been tested using Ubuntu 20.04 using Python 3.10.6
 ```
 
 ### Install Prerequisite Packages
@@ -26,7 +27,7 @@ $ git clone https://github.com/metilda-uw/MeTILDA_reproduce.git
 ### Create and activate a virtual environment
 
 ```
-$ virtualenv MeTILDA_reproduce --python=3.8.10
+$ virtualenv MeTILDA_reproduce
 $ cd MeTILDA_reproduce
 $ source bin/activate
 ```
