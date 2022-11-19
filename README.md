@@ -8,7 +8,7 @@ Melodic Transcription in Language Documentation and Application (MeTILDA) is a L
 ### Setting up Metilda 
 
 ```
-MeTILDA_Reproduce has been tested using Ubuntu 20.04 using Python 3.10.6
+MeTILDA_Reproduce has been tested using Ubuntu 20.04 and Python 3.10.6
 ```
 
 ### Install Prerequisite Packages
