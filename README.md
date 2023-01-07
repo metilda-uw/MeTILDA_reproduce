@@ -11,6 +11,12 @@ Melodic Transcription in Language Documentation and Application (MeTILDA) is a L
 git clone https://github.com/metilda-uw/MeTILDA_reproduce.git
 ```
 
+### Install all the Dependencies
+```
+cd MeTILDA_reproduce
+bash install_metilda.sh
+```
+
 ### Install Node and NVM
 1. Install NVM
 
