@@ -17,10 +17,11 @@ cd MeTILDA_reproduce
 bash install_metilda.sh
 ```
 
-### Install Node and NVM
-1. Install NVM
+### Install NVM and change version
+1. Install NVM(In the URL below make sure you replace v0.35.0 with the latest version of nvm.)
 
 ```
+curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh
 bash install_nvm.sh
 ```
 
