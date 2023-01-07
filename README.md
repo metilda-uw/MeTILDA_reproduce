@@ -38,7 +38,7 @@ nvm use 14.18.2
 
 
 ### Run the Application
-To run the application the terminal should be in the MeTILDA_reproduce folder
+To run the application, execute the following commands inside the MeTILDA_reproduce folder
 ```
 source bin/activate
 cd src/metilda
