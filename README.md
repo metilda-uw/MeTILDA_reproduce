@@ -36,6 +36,10 @@ source ~/.profile
 nvm install 14.18.2
 nvm use 14.18.2
 ```
+### Installing NPM Dependencies
+cd ./frontend
+npm install
+cd ..
 
 
 ### Run the Application

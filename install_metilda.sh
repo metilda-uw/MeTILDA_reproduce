@@ -7,10 +7,6 @@ sudo apt-get -y install build-essential checkinstall virtualenv python-dev-is-py
 echo '>> Creating Virtual ENV...' >&2
 virtualenv "../MeTILDA_reproduce"
 
-echo '>> Installing NPM...' >&2
-cd ./frontend
-npm clean-install
-
 echo '>> Activating Virtual ENV...' >&2
 source "../bin/activate"
 
