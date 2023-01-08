@@ -9,12 +9,7 @@ Melodic Transcription in Language Documentation and Application (MeTILDA) is a L
 
 ```
 git clone https://github.com/metilda-uw/MeTILDA_reproduce.git
-```
-
-### Install Dependencies
-```
 cd MeTILDA_reproduce
-bash install_metilda.sh
 ```
 
 ### Install NVM and change version
@@ -36,18 +31,12 @@ source ~/.profile
 nvm install 14.18.2
 nvm use 14.18.2
 ```
-### Installing NPM Dependencies
+
+### Install Dependencies
 ```
-cd ./frontend
-npm install
-cd ..
+bash install_metilda.sh
 ```
 
-### Install Python Dependencies
-```
-source bin/activate
-pip install -r requirements.txt
-```
 ### Run the Application
 To run the application, execute the following commands inside the MeTILDA_reproduce folder
 ```
