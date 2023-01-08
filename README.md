@@ -43,6 +43,11 @@ npm install
 cd ..
 ```
 
+### Install Python Dependencies
+```
+source bin/activate
+pip install -r requirements.txt
+```
 ### Run the Application
 To run the application, execute the following commands inside the MeTILDA_reproduce folder
 ```

@@ -7,9 +7,3 @@ sudo apt-get -y install build-essential checkinstall virtualenv python-dev-is-py
 echo '>> Creating Virtual ENV...' >&2
 virtualenv "../MeTILDA_reproduce"
 
-echo '>> Activating Virtual ENV...' >&2
-source "../bin/activate"
-
-echo '>> Installing Django Packages...' >&2
-cd ..
-pip install -r requirements.txt
