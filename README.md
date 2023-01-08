@@ -12,7 +12,7 @@ git clone https://github.com/metilda-uw/MeTILDA_reproduce.git
 cd MeTILDA_reproduce
 ```
 
-### Install NVM and change version
+### Install NVM and Change version (Ref: <a href="https://heynode.com/tutorial/install-nodejs-locally-nvm">Node Version Manager</a>)
 1. Install NVM(In the URL below make sure you replace v0.35.0 with the latest version of nvm.)
 
 ```
