@@ -48,4 +48,25 @@ python run.py
 ## Folder and File Descriptions
 | File/Folder | Description |
 | --------------- | --------------- |
-| /bin | contains the shell scripts to run test cases and pushing code to git and run the application as a local server. |
+| **/bin** | contains the shell scripts to run test cases and pushing code to git and run the application as a local server. |
+| **/frontend** | contains all the code for the user interface of the application along with the dependencies. |
+| **/frontend/public** | contains favicon, index page and manifest files. |
+| **/frontend/src** |  contains all the UI components divided into subfolder with respective typescript, test and css files. |
+| **/frontend/src/Create** | contains multiple components that are used on the create page of the application. |
+| **/frontend/src/Layout** | contains the code for the navigation bar on the top of each page. |
+| **/frontend/src/Learn** | contains multiple components used on the learn page of the application. |
+| **/frontend/src/Lib/imgareaselect** | contains javascript code to handle all the operations of selecting, right-clicks and mouse drag operations on the spectrogram on the create page. |
+| **/frontend/src/reducers/audio** | contains the redux(react) code for the audio analysis on the create page. |
+| **/frontend/src/store** | contains the redux(react) code for all the different actions performed on the audio analysis. |
+| **/frontend/src/testSupport** | contains proptypes for some of the components used in the test cases. |
+| **/frontend/src/type** | contains the proptypes for some react elements. |
+| **/frontend/load_tests** | contains code to perform load test on the application. |
+| **/frontend/package.json** | contains all the npm dependencies for the frontend code. |
+| **/src/metilda/** | contains python scripts to perform all the backend operations of the application along with all the dependencies. |
+| **/src/metilda/controllers** | contains scripts that generate spectrograms and the pitch art based on the user selections. |
+| **/src/metilda/services** | contains all the supporting functions to calculate pitch and file operations. |
+| **/src/sounds** | contains blackfoot audio samples from a native speaker. |
+| **/requirments.txt** | contains all the python dependencies for the backend code. |
+| **/install_metilda.sh** | contains all the linux commands to install software that the application requires. |
+
+
