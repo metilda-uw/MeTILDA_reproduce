@@ -44,3 +44,8 @@ source bin/activate
 cd src/metilda
 python run.py
 ```
+
+## Folder and File Descriptions
+| File/Folder | Description |
+| --------------- | --------------- |
+| /bin | contains the shell scripts to run test cases and pushing code to git and run the application as a local server. |
